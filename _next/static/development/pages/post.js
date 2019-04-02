@@ -19562,7 +19562,7 @@ function (_React$Component) {
         title: item.fields.title,
         description: item.fields.description,
         twitterDescription: item.fields.twitterDescription,
-        image: item.fields.featuredImage ? item.fields.featuredImage.fields.file.url : 'https://avatars1.githubusercontent.com/u/28115284?s=460&v=4',
+        image: item.fields.featuredImage ? "https:".concat(item.fields.featuredImage.fields.file.url) : 'https://avatars1.githubusercontent.com/u/28115284?s=460&v=4',
         keywords: item.fields.keywords,
         type: 'article',
         url: "sanyamarya.io/post?slug=".concat(item.fields.slug),
@@ -19571,11 +19571,12 @@ function (_React$Component) {
           section: item.fields.category.toString()
         }
       };
+      console.log(seoMeta);
       return react__WEBPACK_IMPORTED_MODULE_8__["createElement"](_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
         seo: seoMeta,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 54
         },
         __self: this
       }, item.fields.featuredImage && react__WEBPACK_IMPORTED_MODULE_8__["createElement"]("img", {
@@ -19583,13 +19584,13 @@ function (_React$Component) {
         alt: item.fields.featuredImage.fields.file.fileName,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 55
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8__["createElement"]("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         },
         __self: this
       }, item.fields.title));
@@ -19734,7 +19735,7 @@ function _findOnePost() {
             };
             _context2.next = 3;
             return client.getEntries(query).then(function (res) {
-              console.log('no errors');
+              console.log(res.items[0].fields.featuredImage);
               return res.items;
             }).catch(function (err) {
               console.log('err in catch');

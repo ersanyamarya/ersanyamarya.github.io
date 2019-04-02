@@ -19513,70 +19513,73 @@ var _jsxFileName = "/home/arya/workDirectory/testTSFB/gh-pages-app/pages/blog.ts
 
 var getAllBlogs = function getAllBlogs(items) {
   return items.map(function (blog, index) {
-    return react__WEBPACK_IMPORTED_MODULE_4__["createElement"](next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-      key: index,
-      as: "/post/".concat(blog.fields.slug),
-      href: "/post?slug=".concat(blog.fields.slug),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
-      className: "card",
-      style: {
-        animationDelay: "".concat(index * 0.5, "s")
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, " ", blog.fields.title), blog.fields.featuredImage && react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("img", {
-      src: blog.fields.featuredImage.fields.file.url,
-      alt: blog.fields.featuredImage.fields.file.fileName,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, blog.fields.description, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("br", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("br", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }, "Continue reading ....")), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("h3", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38
-      },
-      __self: this
-    }, blog.fields.category)));
+    return (// <Link  href={{ pathname: '/post', query: { id: blog.fields.slug } }} as={`/post/${blog.fields.slug}`} >
+      react__WEBPACK_IMPORTED_MODULE_4__["createElement"](next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        prefetch: true,
+        key: index,
+        as: "/post/".concat(blog.fields.slug),
+        href: "/post?slug=".concat(blog.fields.slug),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
+        className: "card",
+        style: {
+          animationDelay: "".concat(index * 0.5, "s")
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, " ", blog.fields.title), blog.fields.featuredImage && react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("img", {
+        src: blog.fields.featuredImage.fields.file.url,
+        alt: blog.fields.featuredImage.fields.file.fileName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, blog.fields.description, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, "Continue reading ....")), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, blog.fields.category)))
+    );
   });
 };
 
@@ -19585,27 +19588,27 @@ var BlogsPage = function BlogsPage(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_4__["createElement"](_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
     className: "blogsContainer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 53
     },
     __self: this
   }, "Sanyam Arya"), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("input", {
@@ -19615,21 +19618,21 @@ var BlogsPage = function BlogsPage(_ref) {
     placeholder: "Search..",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 54
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
     className: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 62
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
     className: "main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 63
     },
     __self: this
   }, getAllBlogs(items))));
@@ -19755,7 +19758,7 @@ function _findOnePost() {
             };
             _context2.next = 3;
             return client.getEntries(query).then(function (res) {
-              console.log('no errors');
+              console.log(res.items[0].fields.featuredImage);
               return res.items;
             }).catch(function (err) {
               console.log('err in catch');
